@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                sh 'cd /MywebApp && mvn clean package'
+                sh 'mvn clean package'
             }
         }
     }
